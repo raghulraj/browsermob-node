@@ -1,14 +1,14 @@
 {
-  "name": "browsermob-proxy",
+  "name": "ysb-browsermob-proxy",
   "description": "Javascript bindings for the browsermob-proxy",
   "keywords": ["selenium", "test", "testing", "proxy", "tests", "har"],
-  "version": "1.0.10",
-  "author": "Mark Ethan Trostler <mark@zzo.com>",
+  "version": "1.0.0",
+  "author": "Raghul Raj V <raghul22@verizonmedia.com>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/zzo/browsermob-node.git"
+    "url": "git://github.com/raghulraj/ysb-browsermob-proxy.git"
   },
-  "homepage": "https://github.com/zzo/browsermob-node",
+  "homepage": "https://github.com/raghulraj/ysb-browsermob-proxy",
   "main": "./browsermob.js",
   "dependencies" :
     {

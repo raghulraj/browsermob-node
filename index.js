@@ -12,7 +12,7 @@ function Proxy(conf) {
     this.proxyPort = (conf && conf.proxyPort) || null;
     this.selHost = (conf && conf.selHost) || 'localhost';
     this.selPort = (conf && conf.selPort) || 4444;
-
+    this.trustAllServers = (conf && conf.trustAllServers) || false;
     this.downstreamKbps = conf && conf.downstreamKbps;
     this.upstreamKbps = conf && conf.upstreamKbps;
     this.latency = conf && conf.latency;
@@ -75,7 +75,8 @@ Proxy.prototype = {
             cb = port;
         }
         if (typeof(port) === 'number') {
-            postData = 'port=' + port;
+            postData = 'port=' + port+'&trustAllServers='+this.trustAllServers;
+            //postData = 'port=' + port;
         }
 
         this.doReq('POST', '/proxy', postData, function(err, data) {

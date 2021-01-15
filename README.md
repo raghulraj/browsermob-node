@@ -1,3 +1,5 @@
+This is Repo is clone of Mark Ethan Trostler (zzo/browsermob-node) with an option to pass trustAllServers during proxy creation.
+
 NodeJS bindings for browsermob-proxy to programmatically generate HAR files
 ===========================
 
