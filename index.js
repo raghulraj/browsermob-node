@@ -75,7 +75,7 @@ Proxy.prototype = {
             cb = port;
         }
         if (typeof(port) === 'number') {
-            postData = 'port=' + port+'&trustAllServers='+trustAllServers;
+            postData = 'port=' + port+'&trustAllServers='+this.trustAllServers;
             //postData = 'port=' + port;
         }
 
